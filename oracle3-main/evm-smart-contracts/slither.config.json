@@ -1,0 +1,8 @@
+{
+    "filter_paths": "contracts/mocks,.deps/,node_modules/",
+    "compile_force_framework": "hardhat",
+    "exclude_informational": true,
+    "hardhat_cache_directory": "./build/cache",
+    "hardhat_artifacts_directory": "./build/artifacts",
+    "detectors_to_exclude": "timestamp"
+}

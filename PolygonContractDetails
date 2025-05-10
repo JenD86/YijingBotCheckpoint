@@ -1,0 +1,26 @@
+No Vig
+
+Deployer account: 0x4eF4D0A801B590215303269750E43Df662B7Ddfc
+Account balance: 118903363937644485678
+
+===== Deploy Point Contract =====
+Tx Hash: 0xa90218fcf142af79599734b717a6aec272cd65084e582c5ad5a52b421e92ec89
+Point Contract:  0x3eFC8D64acaeb4c60A91E6074C4C392BbA75C3a6
+
+Deployer account: 0x4eF4D0A801B590215303269750E43Df662B7Ddfc
+Account balance: 118866249607202540238
+
+===== Deploy Tournament Contract =====
+Tx Hash: 0xf30844418fb072ec8e1c50d88dd09baa4e1e496b7efe4ecc6ea2cd0dc19ae107
+Tournament Contract:  0xb8c858FcFF24b250fD7EF91C32d358C811CeCf04
+
+Vig
+
+ent.ts --network polygon
+Compiled 1 Solidity file successfully (evm target: paris).
+Deployer account: 0x4eF4D0A801B590215303269750E43Df662B7Ddfc
+Account balance: 118752334619927772595
+
+===== Deploy Tournament Contract =====
+Tx Hash: 0x9ede6e2a00419ed0b8f8f283e471a3dc7685fbb1e798ce4cfcffe4d0c7b46923
+Tournament Contract:  0x7BB89a94331173623a97C905baf4142738A381e0

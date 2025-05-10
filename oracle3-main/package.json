@@ -1,0 +1,31 @@
+{
+  "name": "oracleapp",
+  "version": "1.0.0",
+  "description": "TESTINGGG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paoloprime/oracle3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paoloprime/oracle3/issues"
+  },
+  "homepage": "https://github.com/paoloprime/oracle3#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.33.1",
+    "@nestjs/config": "^3.3.0",
+    "@nestjs/schedule": "^4.1.2",
+    "@nestjs/swagger": "^8.1.0",
+    "@types/web3": "^1.0.20",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "swagger-ui-express": "^5.0.1",
+    "web3": "^4.16.0"
+  }
+}

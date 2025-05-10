@@ -1,0 +1,51 @@
+import { axiosAPI } from './axiosApi';
+
+interface LotteryTicket {
+  id: string;
+  userId: number;
+  drawDate: Date;
+  ticketNumber: string;
+  isActive: boolean;
+}
+
+interface DrawResult {
+  drawId: number;
+  drawDate: Date;
+  winningTicketId: string | null;
+  participatingTickets: number;
+  isComplete: boolean;
+  nextDrawTime: Date;
+}
+
+export const lotteryApi = {
+  // Get all tickets for a user
+  getUserTickets: async (userId: number): Promise<LotteryTicket[]> => {
+    const response = await axiosAPI.get(`/lottery/tickets/${userId}`);
+    return response.data;
+  },
+
+  // Get only active tickets
+  getActiveTickets: async (userId: number): Promise<LotteryTicket[]> => {
+    const response = await axiosAPI.get(`/lottery/tickets/${userId}/active`);
+    return response.data;
+  },
+
+  // Get draw results for a specific date
+  getDrawResults: async (date?: string): Promise<DrawResult> => {
+    const params = date ? { date } : {};
+    const response = await axiosAPI.get('/lottery/draws', { params });
+    return response.data;
+  },
+
+  // Get today's draw information
+  getTodayDraw: async (): Promise<DrawResult> => {
+    const response = await axiosAPI.get('/lottery/today');
+    return response.data;
+  },
+
+  // Verify a specific draw
+  verifyDraw: async (drawId: number): Promise<boolean> => {
+    const response = await axiosAPI.get(`/lottery/verify/${drawId}`);
+    return response.data;
+  }
+};

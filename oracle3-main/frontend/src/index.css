@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: #121317;
+	font-family: "Pixel Operator";
+	font-weight: 400;
+	src: local("Pixel Operator"), url("./assets/fonts/PixelOperator.ttf") format("truetype");
+	color: #54B052;
+	padding: 0;
+	margin: 0;
+}
+
+.tgui-c3e2e598bd70eee6 {
+	font-family: "Pixel Operator", monospace;
+	color: #54B052
+}
+
+@font-face {
+	font-family: "Pixel Operator";
+	font-weight: 400;
+	src: local("Pixel Operator"), url("./assets/fonts/PixelOperator.ttf") format("truetype");
+	color: #54B052
+}
+
+@font-face {
+	font-family: "Pixel Operator";
+	font-weight: 400;
+	color: #54B052;
+	src: local("Pixel Operator"), url("./assets/fonts/PixelOperator.ttf")
+		format("opentype");
+		
+}
+
+@font-face {
+	font-family: "Pixel Operator";
+	font-weight: 400;
+	color: #54B052;
+	src: local("Pixel Operator"), url("./assets/fonts/PixelOperator.ttf") format("truetype");
+}
+
+p 	{
+	font-family: "Pixel Operator";
+	font-weight: 300;
+	color: #54B052;
+	src: local("Pixel Operator"), url("./assets/fonts/PixelOperator.ttf")
+	format("opentype");
+	
+}
